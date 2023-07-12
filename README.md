@@ -13,3 +13,25 @@
      - [GET] localhost:9090/myapp/dev
    - 예 : myapp-prod.yml
      - [GET] localhost:9090/myapp/prod
+   - localhost:9090/myapp/dev 응답 
+   ````java
+   {
+      "name": "myapp",
+      "profiles": [
+         "dev"
+      ],
+      "label": null,
+      "version": "7c5e3fbc3accf27538cc5cd85fe3e3e0f16f955d",
+      "state": null,
+      "propertySources": [
+         {
+            "name": "https://github.com/jjunhoo/spring-cloud-config-repository/myapp-dev.yml",
+            "source": {
+               "junho.profile": "DEV Environment",
+               "junho.text": "DEV Config"
+            }
+         }   
+      ]
+   }
+
+   ````
